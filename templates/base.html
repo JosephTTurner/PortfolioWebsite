@@ -1,0 +1,66 @@
+<html>
+
+<title>
+	{% if title %}
+			{{title}} - Joseph T Turner
+	{% endif %}
+</title>
+
+<head>
+	{# open source css #}
+	<!--<link rel='stylesheet' type='text/css' href='/static/scripts/css/jquery-ui.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/jquery-ui.structure.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/jquery-ui.theme.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/bootstrap.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/bootstrap-grid.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/bootstrap-reboot.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/bootstrap-select.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/jquery.dataTables.min.css'>
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/spin.css'>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/static/scripts/css/w3.css">
+	
+	{# costum css #}
+	<link rel='stylesheet' type='text/css' href='/static/scripts/css/style.css'>
+
+
+	{# open source scripts #}
+	<script src='/static/scripts/js/jquery-3.4.1.min.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/jquery-ui.min.js' type='text/javascript'></script>
+	<!-- <script src='/static/scripts/js/spin.min.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/jquery.spin.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/popper.min.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/bootstrap.min.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/bootstrap.bundle.min.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/jquery.cookie.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/moment-with-locales.js' type='text/javascript'></script>
+	<script src='/static/scripts/js/jquery.dataTables.min.js' type='text/javascript'></script> -->
+
+	{# common custom scripts #}
+	<script src='/static/scripts/js/client.js' type='text/javascript'></script>
+		
+	{% block head %}
+	{% endblock %}
+</head>
+
+
+<header class="w3-container w3-black w3-center w3-text-red">
+	<div id="name">
+		<h1> Joseph T Turner </h1>
+	</div>
+	{% block header %}
+		{% include 'partials/nav_menu.html'%}
+	{% endblock %}
+</header>
+
+<body class="w3-container w3-content w3-black">	
+	{% block content %}
+	{% endblock %}
+</body>
+
+<footer class="w3-container w3-black">
+	{% block footer %}
+	{% endblock %}
+</footer>
+
+</html>
