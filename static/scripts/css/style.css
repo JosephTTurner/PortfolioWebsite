@@ -9,3 +9,14 @@ h1 {
 .w3-text-red {
     color: darkred !important;
 }
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+}
